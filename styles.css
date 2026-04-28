@@ -6,17 +6,18 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #0f0f0f;
+    color: #fff;
 }
 
 .navbar {
-    background-color: #1a1a1a;
+    background-color: #000;
     color: white;
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 2px solid #e50914;
 }
 
 .container {
@@ -26,6 +27,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e50914;
+    letter-spacing: 2px;
 }
 
 .nav-links {
@@ -38,10 +46,11 @@ body {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
+    font-weight: 500;
 }
 
 .nav-links a:hover {
-    color: #ff6b6b;
+    color: #e50914;
 }
 
 .videos-section {
@@ -51,6 +60,7 @@ body {
 .videos-section h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
+    color: #fff;
 }
 
 .video-grid {
@@ -60,27 +70,29 @@ body {
 }
 
 .video-card {
-    background: white;
+    background: #1a1a1a;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    border: 2px solid transparent;
 }
 
 .video-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px rgba(229, 9, 20, 0.5);
+    border-color: #e50914;
 }
 
 .video-thumbnail {
     width: 100%;
     height: 180px;
-    background-color: #000;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #e50914;
     font-size: 3rem;
 }
 
@@ -92,6 +104,7 @@ body {
     font-weight: bold;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
+    color: #fff;
 }
 
 .video-duration {
@@ -107,30 +120,32 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #000;
     margin: 5% auto;
     padding: 0;
     width: 90%;
     max-width: 800px;
     border-radius: 8px;
     overflow: hidden;
+    border: 2px solid #e50914;
 }
 
 .close {
-    color: #aaa;
+    color: #e50914;
     float: right;
     font-size: 2rem;
     font-weight: bold;
     padding: 1rem;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
 .close:hover {
-    color: #000;
+    color: #fff;
 }
 
 video {
